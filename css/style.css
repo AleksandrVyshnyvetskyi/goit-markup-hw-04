@@ -11,6 +11,8 @@
   --bgd-color: #2f303a;
   /* цвет фона кнопок */
   --bgd-button-color: #f5f4fa;
+  /* цвет иконок */
+  --svg-color: #afb1b8;
 }
 
 body {
@@ -137,8 +139,6 @@ img {
 }
 
 .header-contacts {
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-left: auto;
 
   letter-spacing: 0.02em;
@@ -153,6 +153,8 @@ img {
 .email-header {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 
   color: var(--text-color);
   letter-spacing: 0.02em;
@@ -164,11 +166,14 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .tel-header {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 
   color: var(--text-color);
   letter-spacing: 0.02em;
@@ -180,6 +185,7 @@ img {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Герой */
@@ -291,9 +297,12 @@ img {
 }
 
 .feature-svg {
-  width: 270px;
-  height: 120px;
+  width: 70px;
+  height: 70px;
+
   margin-bottom: 30px;
+
+  background-color: var(--bgd-button-color);
 }
 
 .feature-tittle {
@@ -363,13 +372,35 @@ img {
 
 .team-link {
   margin-top: 16px;
-  margin-left: 28px;
-  margin-right: 28px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
 }
-.team-link-svg {
+
+.team-link-item {
   width: 44px;
   height: 44px;
+  border-radius: 50%;
   margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--svg-color);
+  text-decoration: none;
+}
+
+.team-link-item:hover {
+  background-color: var(--theme-accent);
+}
+
+.team-link-svg:hover {
+  fill: var(--bgd-button-color);
+}
+
+.team-link-svg {
+  width: 20px;
+  height: 20px;
 }
 
 .team-link-svg:last-child {
@@ -378,13 +409,32 @@ img {
 
 .client-section {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-.icon-svgclient {
+.client {
+  border: 1px solid #afb1b8;
+  border-radius: 5px;
   width: 170px;
   height: 92px;
+  display: flex;
+  justify-content: center;
+  margin-right: 30px;
+  color: var(--svg-color);
+}
+
+.client-box:last-child {
+  margin-right: 0px;
+}
+
+.client:hover {
+  color: var(--theme-accent);
+  border: 1px solid var(--theme-accent);
+}
+
+.icon-svgclient {
+  width: 106px;
+  fill: currentColor;
 }
 
 /* Портфолио */
@@ -535,8 +585,8 @@ img {
 }
 
 .footer-link-svg {
-  width: 44px;
-  height: 44px;
+  width: 20px;
+  height: 20px;
 }
 
 .footer-link-item {
