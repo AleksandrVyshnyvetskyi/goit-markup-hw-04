@@ -381,26 +381,27 @@ img {
 .team-link-item {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
   margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--svg-color);
   text-decoration: none;
+  color: var(--svg-color);
 }
 
 .team-link-item:hover {
   background-color: var(--theme-accent);
+  color: var(--main-bgd-color);
+  border: 0;
+  border-radius: 50%;
 }
 
-.team-link-svg:hover {
+/* .team-link-svg:hover {
   fill: var(--bgd-button-color);
-}
+} */
 
 .team-link-svg {
-  width: 20px;
-  height: 20px;
+  fill: currentColor;;
 }
 
 .team-link-svg:last-child {
@@ -580,21 +581,37 @@ img {
   margin-left: 70px;
 }
 
-.footer-link {
+.footer-link-box {
   display: flex;
 }
 
 .footer-link-svg {
   width: 20px;
   height: 20px;
+  fill: var(--main-bgd-color);
 }
 
 .footer-link-item {
-  margin-right: 10px;
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+    align-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-link-item:last-child {
+.footer-link-item:hover {
+  background-color: var(--theme-accent);
+}
+
+.footer-link {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.footer-link:last-child {
   margin-right: 0px;
 }
 
