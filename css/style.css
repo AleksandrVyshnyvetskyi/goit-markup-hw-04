@@ -301,8 +301,8 @@ img {
   width: 270px;
   height: 120px;
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 3px;
   margin-bottom: 30px;
   background-color: var(--bgd-button-color);
@@ -327,10 +327,32 @@ img {
 
 .works-item {
   margin-right: 30px;
+  position: relative;
 }
 
 .works-item:last-child {
   margin-right: 0;
+}
+
+.works-text-box {
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.works-text {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-bgd-color);
 }
 
 /* Наша команда */
@@ -411,7 +433,7 @@ img {
 }
 
 .team-link-svg {
-  fill: currentColor;;
+  fill: currentColor;
 }
 
 .team-link-svg:last-child {
@@ -609,7 +631,7 @@ img {
 .footer-link-item {
   display: flex;
   justify-content: center;
-    align-items: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border: 0;
